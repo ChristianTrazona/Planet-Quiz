@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuestionsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_planet_quiz" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuestion1"
+            style="@style/QuestionButtonStyle"
+            android:text="@string/question_1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuestion2"
+            style="@style/QuestionButtonStyle"
+            android:text="@string/question_2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnQuestion3"
+            style="@style/QuestionButtonStyle"
+            android:text="@string/question_3" />
+
+    </LinearLayout>
+</ScrollView>

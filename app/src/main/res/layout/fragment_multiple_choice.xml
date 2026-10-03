@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".MultipleChoiceFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/tvQuestionTitle"
+            style="@style/TitleTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="What is the largest planet?" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMercury"
+            style="@style/AnswerButtonStyle"
+            android:text="@string/planet_mercury" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnVenus"
+            style="@style/AnswerButtonStyle"
+            android:text="@string/planet_venus" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnEarth"
+            style="@style/AnswerButtonStyle"
+            android:text="@string/planet_earth" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnMars"
+            style="@style/AnswerButtonStyle"
+            android:text="@string/planet_mars" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnJupiter"
+            style="@style/AnswerButtonStyle"
+            android:text="@string/planet_jupiter" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSaturn"
+            style="@style/AnswerButtonStyle"
+            android:text="@string/planet_saturn" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnUranus"
+            style="@style/AnswerButtonStyle"
+            android:text="@string/planet_uranus" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNeptune"
+            style="@style/AnswerButtonStyle"
+            android:text="@string/planet_neptune" />
+
+        <TextView
+            android:id="@+id/tvResult"
+            style="@style/ResultTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:text="CORRECT! Jupiter is the largest planet and is 2.5 times the mass of all the other planets put together."
+            tools:visibility="visible" />
+
+    </LinearLayout>
+</ScrollView>
